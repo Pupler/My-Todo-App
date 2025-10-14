@@ -5,6 +5,26 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState([]);
 
+
+  // Add-Task Function
+  const addToDo = () => {
+    if (inputValue.trim() !== '') {
+      const newToDo = {
+        id: Date.now(),
+        text: inputValue,
+        completed: false
+      };
+      setTodos([...todos, newToDo]);
+      setInputValue('');
+    }
+  };
+
+  // Delete-Task Function
+  const deleteToDo = (id) => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  }
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,12 +37,23 @@ function App() {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         placeholder='New task...'
+        onKeyDown={(e) => e.key === 'Enter' && addToDo()}
         />
-        <button>Add task</button>
+        <button onClick={addToDo}>Add task</button>
       </div>
 
       <div className='ToDo-List'>
-        {/* Tasks here */}
+        {todos.map(todo => (
+          <div key={todo.id} className='ToDo-Item'>
+            <span className='ToDo-Text'>{todo.text}</span>
+            <button
+            onClick={() => deleteToDo(todo.id)}
+            className='Delete-Btn'
+            >
+              Delete
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );

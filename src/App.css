@@ -38,3 +38,32 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
+.ToDo-Text {
+  font-size: 16px;
+}
+
+.Delete-Btn {
+  transition: 0.3s;
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Delete-Btn:hover {
+  background: #ff2a2a;
+}
+
+.ToDo-Item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: white;
+}
