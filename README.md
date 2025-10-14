@@ -1,6 +1,6 @@
-# 🚀 My Todo List - React Application
+# 📝 My Todo List - React Application
 
-A simple and elegant task management application built with React. Perfect starter project for learning React fundamentals.
+A simple and elegant task management application built with React.
 
 ## ✨ Features
 
@@ -19,18 +19,18 @@ A simple and elegant task management application built with React. Perfect start
 - **Local Storage** - Data persistence
 - **JavaScript ES6+** - Modern JavaScript features
 
-## 🚀 Getting Started
+## 🚀 Getting started
 
 ### Prerequisites
 - Node.js (version 14 or higher)
 - npm or yarn
 
-### 🚀 Installation
+### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/my-todo-app.git
-cd my-todo-app
+git clone https://github.com/Pupler/My-Todo-App.git
+cd My-Todo-App
 
 # Install dependencies
 npm install
@@ -42,16 +42,17 @@ npm start
 # Navigate to http://localhost:3000
 ```
 
-# 🧩 Available Scripts
+## 🧩 Available Scripts
 
-npm start — Runs the app in development mode
+```npm start``` — Runs the app in development mode
 
-npm run build — Builds the app for production
+```npm run build``` — Builds the app for production
 
-npm test — Launches the test runner
+```npm test``` — Launches the test runner
 
-# 📁 Project Structure
+## 📁 Project Structure
 
+```bash
 src/
 ├── App.js              # Main application component
 ├── App.css             # Main application styles
@@ -61,3 +62,4 @@ src/
 ├── logo.svg            # React logo
 ├── reportWebVitals.js  # Performance monitoring
 └── setupTests.js       # Test configuration
+```
