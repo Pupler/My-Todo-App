@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -44,14 +44,16 @@ function App() {
 
       <div className='ToDo-List'>
         {todos.map(todo => (
-          <div key={todo.id} className='ToDo-Item'>
+          <div key={todo.id} className={`ToDo-Item ${todo.completed ? 'completed' : ''}`}>
             <span className='ToDo-Text'>{todo.text}</span>
-            <button
-            onClick={() => deleteToDo(todo.id)}
-            className='Delete-Btn'
-            >
-              Delete
-            </button>
+            <div className='ToDo-Actions'>
+              <button
+              onClick={() => deleteToDo(todo.id)}
+              className='Delete-Btn'
+              >
+                Delete
+              </button>
+            </div>
           </div>
         ))}
       </div>
