@@ -11,6 +11,20 @@ A simple and elegant task management application built with React.
 - 📱 **Responsive design** works on all devices
 - 🎯 **Simple and intuitive** user interface
 
+## 📁 Project Structure
+
+```bash
+src/
+├── App.js              # Main application component
+├── App.css             # Main application styles
+├── App.test.js         # Application tests
+├── index.js            # Application entry point
+├── index.css           # Global styles
+├── logo.svg            # React logo
+├── reportWebVitals.js  # Performance monitoring
+└── setupTests.js       # Test configuration
+```
+
 ## 🛠️ Built With
 
 - **React** - Frontend framework
@@ -49,17 +63,3 @@ npm start
 ```npm run build``` — Builds the app for production
 
 ```npm test``` — Launches the test runner
-
-## 📁 Project Structure
-
-```bash
-src/
-├── App.js              # Main application component
-├── App.css             # Main application styles
-├── App.test.js         # Application tests
-├── index.js            # Application entry point
-├── index.css           # Global styles
-├── logo.svg            # React logo
-├── reportWebVitals.js  # Performance monitoring
-└── setupTests.js       # Test configuration
-```
