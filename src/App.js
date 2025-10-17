@@ -3,7 +3,30 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [todos, setTodos] = useState([]);
-  const [inputValue, setInputValue] = useState([]);
+  const [inputValue, setInputValue] = useState('');
+
+
+  // Load from LocalStorage
+  useEffect(() => {
+    const savedTodos = localStorage.getItem('todos');
+
+    if (savedTodos) {
+      try {
+        setTodos(JSON.parse(savedTodos));
+      } catch {
+        localStorage.removeItem('todos');
+      }
+    }
+    
+    console.log('LocalStorage got Todos!')
+  }, []); // When the site reloads - load LocalStorage(todos)
+
+
+  // Save to LocalStorage
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+    console.log('Todos updated!')
+  }, [todos]); // When Todos changes - update LocalStorage
 
 
   // Add-Task Function
@@ -12,7 +35,7 @@ function App() {
       const newToDo = {
         id: Date.now(),
         text: inputValue,
-        completed: false
+        completed: false // Must be later implemented
       };
       setTodos([...todos, newToDo]);
       setInputValue('');
@@ -31,7 +54,7 @@ function App() {
         <h1>To-Do List</h1>
       </header>
 
-      <div class="Add-ToDo">
+      <div className="Add-ToDo">
         <input
         type="text"
         value={inputValue}
