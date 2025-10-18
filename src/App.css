@@ -6,10 +6,20 @@
   font-weight: 700;
 }
 
+body {
+  background: #a7d1ff;
+}
+
 .App {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
 }
 
 .App-header {
@@ -32,7 +42,7 @@
 
 .Add-ToDo button {
   padding: 10px 20px;
-  background: #007bff;
+  background: #2885e9;
   color: white;
   border: none;
   border-radius: 5px;
@@ -62,10 +72,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 8px;
-  background: white;
+  background: rgba(255, 255, 255, 0.247);
 }
 
 p {
