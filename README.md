@@ -14,15 +14,31 @@ A simple and elegant task management application built with React.
 ## 📁 Project Structure
 
 ```bash
-src/
-├── App.js              # Main application component
-├── App.css             # Main application styles
-├── App.test.js         # Application tests
-├── index.js            # Application entry point
-├── index.css           # Global styles
-├── logo.svg            # React logo
-├── reportWebVitals.js  # Performance monitoring
-└── setupTests.js       # Test configuration
+.
+├── public/
+│   ├── favicon.ico              # Browser tab icon
+│   ├── index.html               # Main HTML file
+│   ├── logo192.png              # App icon 192x192
+│   ├── logo512.png              # App icon 512x512
+│   ├── manifest.json            # PWA manifest
+│   └── robots.txt               # SEO robots instructions
+│
+├── src/
+│   ├── App.js                   # Main application component
+│   ├── App.css                  # Main application styles
+│   ├── App.test.js              # Application tests
+│   ├── index.js                 # Application entry point
+│   ├── index.css                # Global styles
+│   ├── logo.svg                 # React logo
+│   ├── reportWebVitals.js       # Performance monitoring
+│   └── setupTests.js            # Test configuration
+│
+├── .gitignore                   # Files and folders ignored by Git
+├── LICENSE                      # MIT License
+├── README.md                    # Project documentation
+├── package.json                 # Project metadata and dependencies
+└── package-lock.json            # Lock file for exact dependency versions
+
 ```
 
 ## 🛠️ Built With
