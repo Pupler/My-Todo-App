@@ -9,7 +9,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   padding: 20px;
   display: flex;
@@ -21,7 +21,7 @@ body {
   width: 100%;
   max-width: 500px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -77,42 +77,117 @@ body {
 }
 
 .Add-ToDo button {
-  padding: 10px 20px;
-  background: #2885e9;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.Add-ToDo button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .ToDo-Text {
   font-size: 16px;
+  flex: 1;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .Delete-Btn {
-  transition: 0.3s;
-  background: #ff4444;
+  background: rgba(255, 0, 0, 0.5);
   color: white;
   border: none;
   padding: 8px 16px;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 0, 0.3);
 }
 
 .Delete-Btn:hover {
-  background: #ff2a2a;
+  background: rgba(255, 0, 0, 0.7);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.ToDo-List {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .ToDo-Item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
-  border-radius: 5px;
-  margin-bottom: 8px;
-  background: rgba(255, 255, 255, 0.075);
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
 
-p {
-  color: rgba(0, 0, 0, 0.479);
+.ToDo-Item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bold;
+}
+
+.checkbox:hover {
+  border-color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ToDo-Item {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Adaptivity */
+@media (max-width: 500px) {
+  .Add-ToDo {
+    flex-direction: column;
+  }
+  
 }
