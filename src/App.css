@@ -2,23 +2,30 @@
 
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
 }
 
 body {
-  background: #a7d1ff;
+  background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App {
+  width: 100%;
   max-width: 500px;
-  margin: 50px auto;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.1);
-
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .App-header {
