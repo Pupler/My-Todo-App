@@ -5,7 +5,6 @@ A simple and elegant task management application built with React.
 ## ⚙️ Features
 
 - ✅ **Add and delete tasks**
-- 🎨 **Color-coded priorities** (low, medium, high)
 - 🔄 **Drag & Drop** task reordering (In developing...)
 - 💾 **Local storage** - your tasks persist after refresh
 - 📱 **Responsive design** works on all devices
@@ -44,7 +43,7 @@ A simple and elegant task management application built with React.
 ## 🛠️ Built With
 
 - **React** - Frontend framework
-- **HTML5 Drag & Drop API** - For task reordering
+- **HTML5** - Semantic markup & application structure
 - **CSS3** - Styling and animations
 - **Local Storage** - Data persistence
 - **JavaScript ES6+** - Modern JavaScript features
