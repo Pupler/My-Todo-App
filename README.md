@@ -2,7 +2,7 @@
 
 A simple and elegant task management application built with React.
 
-## ⚙️ Features
+## ✨ Features
 
 - ✅ **Add and delete tasks**
 - 🔄 **Drag & Drop** task reordering (🚧 Under Development)
