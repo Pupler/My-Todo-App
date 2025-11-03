@@ -54,7 +54,7 @@ function App() {
         <h1>To-Do List</h1>
         <div className='TaskLeft-Block'>
           <p>Tasks left: {todos.length}</p>
-          <button onClick={() => setTodos([])}>Clear All</button>
+          <button className='Clear-All-Btn' onClick={() => setTodos([])}>Clear All</button>
         </div>
       </header>
 
