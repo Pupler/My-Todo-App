@@ -47,6 +47,13 @@ function App() {
     setTodos(todos.filter(todo => todo.id !== id));
   }
 
+  // Confirmation Delete All
+  const clearAll = () => {
+    if (window.confirm("Are you sure you want to delete ALL tasks?")) {
+      setTodos([]);
+    }
+  };
+
 
   return (
     <div className="App">
@@ -54,7 +61,7 @@ function App() {
         <h1>To-Do List</h1>
         <div className='TaskLeft-Block'>
           <p>Tasks left: {todos.length}</p>
-          <button className='Clear-All-Btn' onClick={() => setTodos([])}>Clear All</button>
+          <button className='Clear-All-Btn' onClick={clearAll}>Clear All</button>
         </div>
       </header>
 
