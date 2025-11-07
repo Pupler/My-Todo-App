@@ -78,3 +78,7 @@ npm start
 ```npm run build``` — Builds the app for production
 
 ```npm test``` — Launches the test runner
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
