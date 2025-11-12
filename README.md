@@ -6,7 +6,7 @@ A simple and elegant task management application built with React.
 
 <img width="506" height="736" alt="grafik" src="https://github.com/user-attachments/assets/cb621135-98b8-44e8-83c9-843cf8857eef" />
 
-## 📁 Project Structure
+## 🗂 Project Structure
 
 ```bash
 .
