@@ -2,13 +2,9 @@
 
 A simple and elegant task management application built with React.
 
-## ✨ Features
+## 📸 Preview
 
-- ✅ **Add and delete tasks**
-- 🔄 **Drag & Drop** task reordering (🚧 Under Development)
-- 💾 **Local storage** - your tasks persist after refresh
-- 📱 **Responsive design** works on all devices
-- 🎯 **Simple and intuitive** user interface
+<img width="506" height="736" alt="grafik" src="https://github.com/user-attachments/assets/cb621135-98b8-44e8-83c9-843cf8857eef" />
 
 ## 📁 Project Structure
 
@@ -39,6 +35,14 @@ A simple and elegant task management application built with React.
 └── package-lock.json            # Lock file for exact dependency versions
 
 ```
+
+## ✨ Features
+
+- ✅ **Add and delete tasks**
+- 🔄 **Drag & Drop** task reordering (🚧 Under Development)
+- 💾 **Local storage** - your tasks persist after refresh
+- 📱 **Responsive design** works on all devices
+- 🎯 **Simple and intuitive** user interface
 
 ## 🛠️ Built With
 
