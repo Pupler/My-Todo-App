@@ -1,6 +1,6 @@
 # 📝 My Todo List - React Application
 
-A simple and elegant task management application built with React.
+A sleek and intuitive task management application built with React, designed to help you stay organized and boost productivity with simplicity and style.
 
 ## 📸 Preview
 
