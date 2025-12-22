@@ -39,7 +39,7 @@ A sleek and intuitive task management application built with React, designed to 
 ## ✨ Features
 
 - ✅ **Add and delete tasks**
-- 🔄 **Drag & Drop** task reordering (🚧 Under Development)
+- 🔄 **Drag & Drop** task reordering [🚧 Under Development]
 - 💾 **Local storage** - your tasks persist after refresh
 - 📱 **Responsive design** works on all devices
 - 🎯 **Simple and intuitive** user interface
